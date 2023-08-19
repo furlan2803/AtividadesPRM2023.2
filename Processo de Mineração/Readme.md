@@ -34,18 +34,18 @@ O arquivo contém um total de 16 casos e 12 variações possíveis. As fases com
 
 <img src="https://github.com/furlan2803/AtividadesPRM2023.2/assets/99223562/b4cedf91-48d7-48c8-bc6b-15882aecd227" alt="Descrição da Imagem" width="300"/> 
 
-Com base no mapa do processo, é possível deduzir que ele se relaciona a um procedimento de reparo e manutenção de algum produto ou sistema. As etapas desse processo são as seguintes:
+Com base na análise este é fluxo de processo, associado a um procedimento de reparo e manutenção de produtos ou sistemas. As etapas desse processo são descritas a seguir:
 
-1. **Registrar:** O caso é registrado no sistema automaticamente. (Colocar próximos passos)
-2. **Analisar Defeito:** O defeito é analisado por um “Tester” específico.
-3. **Reparo Complexo:** Se o defeito requer um reparo mais complexo, é  tratado por um dos “Solvers” disponíveis. Esta é a etapa mais demorada, como indicado pelas médias de duração das atividades na plataforma Disco.
-4. **Testar Reparo:** Após o reparo, o produto é testado para verificar se o defeito foi solucionado.
-5. **Informar Usuário:** O usuário é informado sobre o resultado do reparo.
-6. **Arquivar Reparo:** Os detalhes do reparo e seus resultados do teste são arquivados para registro.
-7. **Reiniciar Reparo:** Se o teste não passar, o caso pode ser reiniciado para revisão.
-8. **Reparo Simples:** Se o defeito for simples, ele pode ser encaminhado para um reparo mais simples e rápido.
+1. **Registro:** O processo se inicia automaticamente assim que um caso de defeito é detectado. A informação é inserida no sistema, junto aos dados sobre defeito. Em seguida, o caso é encaminhado para a etapa de análise.
+2. **Análise do Defeito:** Um "Tester" assume a responsabilidade de avaliar o defeito. Isso envolve examinar as informações registradas. Com base na análise, é determinada a complexidade do reparo e dois caminhos são possíveis, “Informar os usuários”, “Reparo Complexo” ou “Reparo Simples” dependendo do contexto. 
+3. **Reparo Complexo:** Quando o defeito é categorizado como reparo complexo, a tarefa é repassada para um "Solver". Durante esta fase, se executa o reparo propriamente dito. Devido à complexidade essa etapa pode demandar mais tempo, conforme indicado pelas médias de duração registradas na plataforma. O próximo passo é o teste reparo, para avaliar se tudo ocorreu conforme o planejado.
+4. **Teste Reparo:** Após a conclusão do reparo, um teste é realizado no produto e/ou sistema. Para verificar a eficácia dos reparos realizados. Caso o resultado seja positivo, o processo avança para informar ao usuário; Se não, o caso parte para um reparo simples.
+5. **Informar Usuário:** O usuário afetado é notificado da “análise do deito” e do “Teste reparo”. Buscando garantir transparência e a satisfação do cliente. Podendo seguir duas opções voltar ao ”Teste de reparo” ou “Arquivar reparo”.
+6. **Arquivamento dos Detalhes:** Todos os detalhes relacionados aos reparos executados e resultados dos testes são arquivados para fins de registro. Finalizando o processo.
+7. **Recomeçar reparo:** Caso o teste reparo não tenha resultados satisfatórios, o caso tem uma revisão adicional. Isso envolver um reparo simples do defeito. 
+8. **Reparo simples:** Se o defeito for classificado como simples e de rápida resolução, o caso é encaminhado para um reparo menos complexo. Sendo encaminhado novamente a o teste reparo.
 
-Texto de conclusão
+O mapa do processo analisa defeitos e realiza reparações em produtos e/ou sistemas. Cada etapa desempenha um papel na identificação, análise e resolução do problema.
 
 ### 2. Quantos casos necessitaram um reparo complexo?
 
@@ -79,3 +79,9 @@ A atividade mais recorrente é o teste reparo, ocorrendo em 21 instâncias. Com 
 2. Quais são os principais fatores que estão contribuindo para o solver c3 ter uma média de duração maior em comparação com os outros solvers? 
 3. Que medidas devem ser tomadas para nivelar o desempenho dos solvers, reduzindo a variação nas durações médias e melhorando a eficiência da etapa de reparo complexo?
 
+Com essas perguntas,  pretende-se descobrir por que as atividades dos solvers c2, c1 e c3 demoram diferentes quantidades de tempo na etapa de reparo complexo. Buscando entender por que o solver c3 leva muito mais tempo do em comparação com os outros solvers. O objetivo é encontrar maneiras de fazer com que o processo fique mais eficiente, reduzindo as diferenças de tempo e tornando a etapa de reparo complexo mais otimizada.
+
+Essa diferença de tempo entre os "Solvers" também acarreta prejuízos para a empresa, conforme descrito a seguir.
+
+- **Eficiência Operacional:** Pode causar atrasos no processo, afetando a capacidade da empresa de atender aos prazos de reparo e entrega.
+- **Satisfação do Cliente:** Tempos de reparo mais longos, deixam os clientes esperando pelo reparo de seus produtos, podendo ficar insatisfeitos devido aos atrasos. Isso pode afetar a reputação da empresa e a confiança do cliente.
